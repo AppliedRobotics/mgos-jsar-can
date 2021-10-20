@@ -1,19 +1,19 @@
 
 let Can = {
     init: function() {
-        return ffi('int mgos_can_init(void)');
+        return ffi('int mgos_jsar_can_init(void)');
     },
 
     writeFrame: function() {
-        return ffi('int mgos_can_write_frame(void *)');
+        return ffi('int mgos_jsar_can_write_frame(void *)');
     },
 
     canStop: function() {
-        return ffi('int mgos_can_stop(void)');
+        return ffi('int mgos_jsar_can_stop(void)');
     },
 
     configFilter: function() {
-        return ffi('int mgos_can_config_filter(void *)');
+        return ffi('int mgos_jsar_can_config_filter(void *)');
     }
 
 };
